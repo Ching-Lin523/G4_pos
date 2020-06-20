@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,EAAE,EAAE,CAAC;EACR,MAAM,EAAE,gBAAgB;EACxB,eAAe,EAAC,QAAQ;CACzB",
+    "sources": [
+        "../ed101_4_back-master/sass/reservation.scss"
+    ],
+    "names": [],
+    "file": "reservation.css"
+}

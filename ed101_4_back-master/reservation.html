@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reservation.css">
+        <title>預約</title>
+    </head>
+<body>
+    <form action="reservation.php" id="myForm"> 
+        <table  id="resTable" >
+            <tr >
+                <td>姓名</td>
+                <td>性別</td>
+                <td>手機</td>
+                <td>人數</td>
+                <td>日期</td>
+                <td>備註</td>
+                <td>  </td>
+            </tr>
+        
+            <tr class="spot">
+                <td> <input type="text" id="name" name="firstname" placeholder="" size="10" required></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="women">女</option>
+                        <option value="men">男</option>
+                    </select>
+                </td>
+                <td><input type="text" id="cell" name="cell" placeholder="" size="15" required></td>
+                <td><input type="text" id="num" name="num" placeholder="" size="5" required></td>
+                <td><input type="text" id="date" name="date" placeholder="" size="15" required></td>
+                <td><input type="text" id="note" name="note" placeholder="" size="30" required></td>
+                <td><input type="image" src="./img/save.png" type="submit"  alt="Submit" width="24" ><img class="trashcan" src="./img/trashcan.png"></td>
+            </tr>
+            
+        </table>
+        <img class="add" src="./img/add.png" id="btnAddSpot">
+        <!-- <input type="submit" value="submit"> -->
+    </form>
+
+<!-- <div class="spot" style="display:none">
+    <table id="resTable">
+        <tr>
+            <td> <input type="text" id="name" name="firstname" placeholder=""></td>
+            <td>
+                <select id="country" name="country">
+                    <option value="women">女</option>
+                    <option value="men">男</option>
+              </select>
+            </td>
+            <td><input type="text" id="cell" name="cell" placeholder=""></td>
+            <td><input type="text" id="num" name="num" placeholder=""></td>
+            <td><input type="text" id="date" name="date" placeholder=""></td>
+            <td><input type="text" id="note" name="note" placeholder=""></td>
+            <td><img src="./img/save.png"><img src="./img/trashcan.png"></td>
+        </tr>
+        
+    </table> -->
+
+
+<!-- <form id="myForm">
+  <input type="submit" id="btnSend" value="送出">	
+</form> -->
+
+
+
+
+<script type="text/javascript">
+    function $id(id){
+    return document.getElementById(id);
+    }
+
+    function addSpot(){
+        let myForm = $id("myForm");
+        let resTable = $id("resTable");
+        let btnSend = $id("btnSend");
+        let spot = document.querySelector(".spot");
+        // let resTablehead = document.getElementById("resTablehead");
+        let newSpot = spot.cloneNode(true);
+        // resTablehead.appendChild(newSpot);
+        // newSpot.style.display=""; 
+        newSpot.getElementsByTagName("img")[0].onclick = removeSpot; //加入JS行為
+
+        // myForm.insertBefore(newSpot, btnSend);
+        resTable.appendChild(newSpot);
+    }
+
+    function removeSpot(e){
+        let resTable = $id("resTable");
+        resTable.removeChild(e.target.parentNode.parentNode);
+    }
+
+    window.addEventListener("load", function(){
+        //-----------------------------加景點
+        $id("btnAddSpot").onclick = addSpot;
+    })
+
+
+</script>
+</body>
+</html>

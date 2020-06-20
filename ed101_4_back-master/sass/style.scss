@@ -1,0 +1,124 @@
+@import "coreui";
+
+// 主要寫的地方
+
+//背景顏色
+.c-app {
+background-color: #fff;
+}
+//側邊顏色
+.c-sidebar {
+  background-color: #28569A;
+  border-radius: 0 30px 30px 0;
+  width: 227px;
+}
+//登出顏色 圓角
+.c-sidebar .c-sidebar-minimizer {
+    background-color: #28569A;
+    border-radius: 0 30px 30px 0
+}
+
+//安安老闆管理員
+
+.c-sidebar-nav-item {
+    padding: 30px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.c-sidebar-nav-dropdown-toggle {
+  font-size: 20px;
+}
+
+//白色圓角
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+  color: #000;
+  background: #ffffff;
+  position: relative;
+  left: 20px;
+  border-radius: 25px 0 0 25px;
+ 
+}
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+  color: #000;
+  background: #ffffff;
+  position: relative;
+  left: 20px;
+  border-radius: 30px 0px 0 30px;
+  padding-right: 10px;
+
+  .functionCaption{
+    left: -27px;
+    position: relative;
+    
+  }
+  &::after {
+    content: '';
+    // border: 1px solid red;
+    background-image: url('../img/Path76.png');
+    position: relative;
+    top: 43px;
+    width: 37px;
+    height: 22px;
+    right: 3px;
+    flex: initial;
+  }
+  &::before {
+    content: '';
+    // border: 1px solid red;
+    background-image: url('../img/Path75.png');
+    position: relative;
+    top: -43px;
+    width: 37px;
+    height: 22px;
+    right: -156.5px;
+  }
+}
+
+
+
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle {
+  position: relative;
+  left: 30px;
+}
+
+//不要動畫
+.c-sidebar-nav-dropdown-toggle{
+  -webkit-transition: initial;
+  transition: initial;
+  padding: 1.1rem 1rem;
+}
+
+
+.c-sidebar .c-sidebar-minimizer:hover{
+  border-radius: 0 0 30px 0;
+}
+
+
+//去除偽元素箭頭
+.c-sidebar .c-sidebar-nav-dropdown-toggle::after {
+  background-image: initial;
+}
+
+
+.topTab{
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block;
+  width: 79px;
+  height:89px;
+  background-color: #28569A;
+  border-radius: 0 0 10px 10px;
+  box-shadow: #333333;
+  margin-left: 40px;
+  text-align: center;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.toptabCaption{
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
