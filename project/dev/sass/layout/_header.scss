@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 .c-sidebar {
     display: -ms-flexbox;
     display: flex;
@@ -20,28 +22,34 @@
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 
+.light{
+    color: rgb(248, 90, 16);
+}
 
     ul {
         .func {
             text-align: center;
 
             .clock {
+                font-family:'Noto Sans TC', sans-serif;
                 font-size: 50px;
-                font-weight: 600;
+                font-weight: 400;
             }
 
             .date {
+                font-family:'Noto Sans TC', sans-serif;
                 font-weight: 400;
             }
 
             .user {
+                font-family:'Noto Sans TC', sans-serif;
                 font-size: 600;
             }
         }
 
         li {
             &:first-child {
-                margin-top: 90px;
+                margin-top: 30px;
             }
 
             height: 62px;
@@ -54,6 +62,8 @@
 
             i {
                 margin-right: 24px;
+                width: 10px;
+                // display: block;
             }
             &:hover, &.actives {
                 // background-color: #fff;
