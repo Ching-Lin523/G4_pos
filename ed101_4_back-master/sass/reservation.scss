@@ -10,6 +10,7 @@ table, td {
 // }
 
 table{
+  margin: 30px;
   font-size: 20px;
   color: grey;
   width: 952px;
@@ -17,11 +18,13 @@ table{
 }
 
 td{
-  padding: 6px;
+  padding: 16px;
 }
 
 .save{
-  margin:0 18px;;
+border: none;
+margin-right: 10px;
+vertical-align: sub;
 }
 
 img{
@@ -43,4 +46,35 @@ form{
 .add{
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+
+.resScrollbar
+{
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+	margin-left: 30px;
+	float: left;
+	height: 500px;
+	width: 1000px;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.resOverflow
+{
+	min-height: 550px;
+}
+
+
+#resScrollstyle::-webkit-scrollbar
+{
+	width: 8px;
+
+}
+
+#resScrollstyle::-webkit-scrollbar-thumb
+{
+  border-radius:50px;
+	background-color: #DDDDDD;
 }
