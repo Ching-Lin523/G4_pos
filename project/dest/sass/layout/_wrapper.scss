@@ -9,19 +9,12 @@
     flex-direction: column;
     min-width: 0;
     min-height: 100vh;
+    .topFunc {
+      width: 250px;
+      position: absolute;
+      right : 100px;
 
-    //以下各分頁新增css
-    .tablehead{
-        margin-top: 20px;
-        padding: 20px;
-        margin-left: 180px;
-        width: 1040px;
-        // border-bottom: 1px solid red;
-        h1{
-        font-size: 35px;
-        }
-    }
-    .topTab {
+      .topTab {
         font-size: 20px;
         color: #ffffff;
         display: inline-block;
@@ -38,6 +31,21 @@
             margin-top: 10px;
         }
     }
+    }
+
+    //以下各分頁新增css
+    .tablehead{
+        margin-top: 20px;
+        padding: 20px;
+        margin-left: 180px;
+        width: 1040px;
+        // border-bottom: 1px solid red;
+        h1{
+        font-size: 35px;
+        }
+    }
+   
+   
     table, td {
         border-bottom: 1px solid rgb(207, 206, 205);
         border-collapse:collapse;

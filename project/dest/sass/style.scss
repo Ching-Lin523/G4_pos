@@ -36,11 +36,11 @@
 // @import "reference/styles";
 // @import "reference/plugins";
 
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
 
 //=================
 // libary setting
@@ -49,7 +49,7 @@
 // @import "libs/hover/scss/hover";
 // @import "libs/owl.carousel/src/scss/owl.carousel";
 // @import "libs/owl.carousel/src/scss/owl.theme.default";
-@import "../../node_modules/hover.css/scss/hover";
+// @import "../../node_modules/hover.css/scss/hover";
 
 
 //=================
